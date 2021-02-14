@@ -12,6 +12,9 @@ const swiper = new Swiper('.swiper-container', {
         delay: 4000,
     },
     breakpoints: {
+        425: {
+            slidesPerView: 2,
+        },
         768: {
             slidesPerView: 3,
         },
