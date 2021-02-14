@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -69,7 +71,44 @@
             </div>
         </div>
     </div>
+    <div class="about">
+        <div class="container">
+            <h2 class="about__title">About us</h2>
+            <hr>
+            <div class="about__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+            <div class="about__wrapper">
+                <div class="about__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div>
+                <div class="about__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/person_1.png" alt="#">
+                        <div class="swiper-name">Md. Khalil Uddin</div>
+                        <div class="swiper-work">Head of Ideas</div>
+                    </div>
+                    <div class="swiper-slide"><img src="img/person_2.png" alt="#">
+                        <div class="swiper-name">Rubel Miah</div>
+                        <div class="swiper-work">Lead WordPress Developer</div></div>
+                    <div class="swiper-slide"><img src="img/person_3.png" alt="#">
+                        <div class="swiper-name">Shamim Mia</div>
+                        <div class="swiper-work">Sr. Web Developer</div></div>
+                    <div class="swiper-slide"><img src="img/person_4.png" alt="#">
+                        <div class="swiper-name">John Doe</div>
+                        <div class="swiper-work">Front-end Developer</div></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><img src="icons/left.svg" alt="#"></div>
+                <div class="swiper-button-next"><img src="icons/right.svg" alt="#"></div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

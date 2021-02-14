@@ -4,10 +4,13 @@
 
 $main_color: #c0301c
 
+body
+    overflow-x: hidden
+
 .container  
     margin: 0 auto
-    max-width: 1120px
-    padding: 0 20px 0 30px
+    max-width: 1180px
+    padding: 0 0px 0 0px
 
 .header
     position: relative
@@ -129,6 +132,80 @@ $main_color: #c0301c
         font-weight: 500
         color: #555555 
         line-height: 23px
+
+.about
+    padding: 100px 0 0 0
+    min-height: 850px
+    background-color: #f0f0f0 
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-size: 20px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        color: #555555
+    hr
+        margin-top: 30px
+        width: 50px
+        height: 1px
+        background-color: #555555 
+    &__subtitle 
+        margin-top: 35px
+        text-align: center
+        font-size: 16px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        color: #555555
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__text
+        margin-top: 80px
+        width: 555px
+        font-size: 13px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        color: #555555 
+        line-height: 23px
+        &:first-child
+            margin-right: 30px
+
+.swiper-container 
+    margin-top: 70px
+    width: 100%
+.swiper-slide
+    img
+        width: 100%
+.swiper-button-next, .swiper-button-prev
+    &::after
+        display: none
+.swiper-button-next
+    right: 0
+    top: 40%
+    width: 40px
+    height: 40px
+    background-color: $main_color
+.swiper-button-prev
+    left: 0
+    top: 40%
+    width: 40px
+    height: 40px
+    background-color: $main_color
+.swiper-name
+    margin-top: 20px
+    text-align: center
+    font-size: 14px
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    color: #555555 
+.swiper-work
+    margin-top: 20px
+    text-align: center
+    font-size: 13px
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+    color: #555555 
+
 
 @media (max-width: 768px)
     .header
