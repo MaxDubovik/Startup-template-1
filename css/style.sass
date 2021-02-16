@@ -226,7 +226,7 @@ body
         font-family: 'Montserrat', sans-serif
         font-weight: 500
         color: #555555  
-        line-height: 35px    
+        line-height: 35px       
     &__tab
         list-style-type: none
         margin-right: 25px
@@ -235,8 +235,14 @@ body
             margin-right: 0
         &:hover
             color: $main_color  
+        &_active
+            color: $main_color
     &__content
         margin-top: 70px
+        display: none
+        transition: 0.5s all
+        &_active
+            display: block
     &-item
         display: grid
         grid-template-columns: 1fr 1fr 1fr
@@ -371,6 +377,7 @@ body
             &__content
                 max-width: 340px
                 max-height: 300px
+
 @media (max-width: 425px)
     .works
         &-item

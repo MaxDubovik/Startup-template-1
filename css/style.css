@@ -334,8 +334,19 @@ body {
   color: #c0301c;
 }
 
+.works__tab_active {
+  color: #c0301c;
+}
+
 .works__content {
   margin-top: 70px;
+  display: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.works__content_active {
+  display: block;
 }
 
 .works-item {
